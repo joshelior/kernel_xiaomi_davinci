@@ -1266,7 +1266,7 @@ int goodix_ts_input_dev_config(struct goodix_ts_core *core_data)
 
 	input_mt_init_slots(input_dev, ts_bdata->panel_max_id * 2 + 1, INPUT_MT_DIRECT);
 
-	input_set_capability(input_dev, EV_KEY, KEY_WAKEUP);
+	input_set_capability(input_dev, EV_KEY, KEY_DOUBLE_TAP);
 	input_set_capability(input_dev, EV_KEY, BTN_INFO);
 	input_set_capability(input_dev, EV_KEY, KEY_GOTO);
 	/*input_set_capability(input_dev, EV_KEY, KEY_INFO);*/
