@@ -808,6 +808,20 @@
         status = "disabled";
 };
 
+&pm6150l_rgb_led {
+	red {
+		status = "disabled";
+	};
+
+	green {
+		label = "left";
+	};
+
+	blue {
+		label = "right";
+	};
+};
+
 &reserved_memory {
 		ramdump_fb_mem: ramdump_fb_region@af000000 {
 			compatible = "removed-dma-pool";
